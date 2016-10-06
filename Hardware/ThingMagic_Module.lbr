@@ -783,6 +783,8 @@
 <circle x="1.27" y="3.81" radius="0.0254" width="0.254" layer="94"/>
 <circle x="1.27" y="-3.81" radius="0.0254" width="0.254" layer="94"/>
 <circle x="-1.27" y="-3.81" radius="0.0254" width="0.254" layer="94"/>
+<circle x="0" y="-3.81" radius="0.0254" width="0.254" layer="94"/>
+<circle x="0" y="3.81" radius="0.0254" width="0.254" layer="94"/>
 </symbol>
 <symbol name="CAP">
 <wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
