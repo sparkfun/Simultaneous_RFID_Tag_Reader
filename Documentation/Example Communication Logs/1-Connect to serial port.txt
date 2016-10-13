@@ -3,18 +3,22 @@
 10/05/2016 09:22:37.396 AM Received
     FF  14  03  00  00  14  12  08  00  30  00  00  02  20  15  03
     10  01  03  01  47  00  00  00  10  EB  FF - 27 bytes. 0x14 = 20 bytes of data + 7 for extra bits (header, Length, opcode, 2 status bytes, ..., 2 bytes CRC)
+
 10/05/2016 09:22:37.396 AM Sending
     FF  00  0C  1D  03 - Get current Program
 10/05/2016 09:22:37.412 AM Received
     FF  01  0C  00  00  52  63  03
+
 10/05/2016 09:22:37.412 AM Sending
     FF  00  68  1D  67 - Get Power Mode
 10/05/2016 09:22:37.428 AM Received
     FF  01  68  00  00  00  A4  BF
+
 10/05/2016 09:22:37.428 AM Sending
     FF  02  6A  01  0E  2E  40 - Get reader optional parameters (0x010E) MSG Transport
 10/05/2016 09:22:37.444 AM Received
     FF  03  6A  00  00  01  0E  00  30  44
+
 10/05/2016 09:22:37.444 AM Sending
     FF  04  06  00  01  C2  00  A4  60 - Set baud rate (115,200)
 10/05/2016 09:22:37.460 AM Received
@@ -27,14 +31,17 @@ Baud is not saved to NVM
     FF  02  6A  01  12  2E  5C - Get reader optional parameters (0x0112) Product Group ID
 10/05/2016 09:22:37.476 AM Received
     FF  04  6A  00  00  01  12  00  00  69  AF - 0x0000 bare module
+
 10/05/2016 09:22:37.476 AM Sending
-    FF  01  61  05  BD  B8 - Get antenna port
+    FF  01  61  05  BD  B8 - Get antenna port for protocol 5 (GEN2)
 10/05/2016 09:22:37.492 AM Received
     FF  03  61  00  00  05  01  00  61  DF
+
 10/05/2016 09:22:37.492 AM Sending
     FF  02  6A  01  0C  2E  42 - (7 bytes) Get reader optional parameters (0x010C) Enable Read Filter
 10/05/2016 09:22:37.508 AM Received
     FF  03  6A  00  00  01  0C  01  32  45
+
 10/05/2016 09:22:37.511 AM Sending
     FF  02  6A  01  0D  2E  43 - Get reader optional parameters (0x010D) Filter Timeout
 10/05/2016 09:22:37.534 AM Received
@@ -43,11 +50,13 @@ Baud is not saved to NVM
 10/05/2016 09:22:37.534 AM Sending
     FF  00  63  1D  6C - Get tag protocol
 10/05/2016 09:22:37.540 AM Received
-    FF  02  63  00  00  00  05  21  46 = Protocl is 0x05?
+    FF  02  63  00  00  00  05  21  46 = Protocol is 0x05?
+
 10/05/2016 09:22:37.546 AM Sending
     FF  00  67  1D  68 - Get region
 10/05/2016 09:22:37.555 AM Received
     FF  01  67  00  00  00  B4  81
+
 10/05/2016 09:22:37.556 AM Sending
     FF  00  71  1D  7E - Get available regions
 10/05/2016 09:22:37.571 AM Received
@@ -109,6 +118,9 @@ Baud is not saved to NVM
     FF  01  61  05  BD  B8 - Get antenna port
 10/05/2016 09:22:37.781 AM Received
     FF  03  61  00  00  05  01  00  61  DF
+	                        TX  RX
+
+
 10/05/2016 09:22:37.781 AM Sending
     FF  01  61  05  BD  B8 - Get antenna port again?
 10/05/2016 09:22:37.796 AM Received

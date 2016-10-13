@@ -2,6 +2,7 @@
     FF  01  97  0D  4B  B0 - Set region
 10/05/2016 09:25:34.887 AM Received
     FF  00  97  00  00  77  9E
+
 10/05/2016 09:25:34.887 AM Sending
     FF  01  62  01  BE  BC - Read TX power
 10/05/2016 09:25:34.903 AM Received

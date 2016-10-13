@@ -1,9 +1,12 @@
 10/05/2016 09:29:19.067 AM Sending
-    FF  03  9A  01  0C  00  A3  5D - Set Reader Parameters 
+    FF  03  9A  01  0C  00  A3  5D - Set Reader Optional Parameter, TMR_SR_OPCODE_SET_READER_OPTIONAL_PARAMS
+01 is 
+0C is the key value = TMR_SR_CONFIGURATION_ENABLE_READ_FILTER
+
 10/05/2016 09:29:19.074 AM Received
     FF  00  9A  00  00  A6  33
 10/05/2016 09:29:41.195 AM Sending
-    FF  03  9A  01  0C  00  A3  5D - Set Reader Parameters DUPLICATE
+    FF  03  9A  01  0C  00  A3  5D - Set Reader Optional Parameters DUPLICATE
 10/05/2016 09:29:41.211 AM Received
     FF  00  9A  00  00  A6  33
 10/05/2016 09:29:41.217 AM Sending
@@ -12,7 +15,9 @@
     FF  03  62  00  00  00  0A  8C  A1  2A
 
 10/05/2016 09:29:41.233 AM Sending
-    FF  03  9B  05  02  02  DE  EA - Set protocol Parameter
+    FF  03  9B  05  02  02  DE  EA - Set protocol Parameter, TMR_SR_OPCODE_SET_PROTOCOL_PARAM
+05 = protocol type 5?
+02 02 = 
 10/05/2016 09:29:41.243 AM Received
     FF  00  9B  00  00  B6  12
 10/05/2016 09:29:41.243 AM Sending
@@ -37,17 +42,42 @@
     FF  00  9B  00  00  B6  12
 
 10/05/2016 09:29:41.384 AM Sending
-    FF  03  9A  01  0C  00  A3  5D - Set reader optional parameters
+    FF  03  9A  01  0C  00  A3  5D - DUPLICATE (above) Set reader optional parameters, TMR_SR_OPCODE_SET_READER_OPTIONAL_PARAMS
+	
+0C is the key value = TMR_SR_CONFIGURATION_ENABLE_READ_FILTER
 10/05/2016 09:29:41.388 AM Received
     FF  00  9A  00  00  A6  33
+
 10/05/2016 09:29:41.390 AM Sending
-    FF  03  91  02  01  01  42  C5 - Set antenna port 
+    FF  03  91  02  01  01  42  C5 - cmdSetAntennaSearchList
+					TX  RX
 10/05/2016 09:29:41.403 AM Received
     FF  00  91  00  00  17  58
 
-10/05/2016 09:29:41.417 AM Sending - Multi protocol tag op
-    FF  10  2F  00  00  01  22  00  00  05  07  22  10  00  1B  03
-    E8  01  FF  DD  2B
+10/05/2016 09:29:41.417 AM Sending - Multi protocol tag op, TMR_SR_OPCODE_MULTI_PROTOCOL_TAG_OP
+    FF  10  2F  00  00  01  22  00  00  05  07  22  10  00  1B  03 E8  01  FF  DD  2B
+	
+	00 00 = timeout (zero for continuous reading
+	01 = "TM option 1 for continuous reading" 
+
+/* Timeout should be zero for true continuous reading */
+SETU16(msg, i, 0);
+SETU8(msg, i, (uint8_t)0x1);//TM Option 1, for continuous reading
+
+	(i = 6) 22 = subcommand opcode, is TMR_SR_OPCODE_READ_TAG_ID_MULTIPLE
+	
+	(7, 8) 00 00 = I think: don't stop after NTags, 'search flags'
+	
+	(9) 05 = "sub protocol ID" - protocol ID to search for? line 3606
+	
+	(10) 07 = "PLEN" = protocol length? 
+	
+	(Add additional bytes via sub function TMR_SR_msgSetupReadTagMultipleWithMetadata)
+	
+	22 = opcode TMR_SR_OPCODE_READ_TAG_ID_MULTIPLE
+	10 = option byte
+	00 = 
+	
 10/05/2016 09:29:41.435 AM Received
     FF  04  2F  00  00  01  22  00  00  6D  C3
 
@@ -63,11 +93,11 @@ Then many reads (about 696ms worth)
 10/05/2016 09:29:56.456 AM Received
     FF  01  2F  00  00  02  30  E6 - Heard: Multi protocol tag op
 10/05/2016 09:29:56.456 AM Sending
-    FF  03  9A  01  0C  00  A3  5D - Set reader optional params
+    FF  03  9A  01  0C  00  A3  5D - Set reader optional params (same as above)
 10/05/2016 09:29:56.471 AM Received
     FF  00  9A  00  00  A6  33
 10/05/2016 09:29:56.500 AM Sending
-    FF  03  9A  01  0C  01  A3  5C - Set reader optional params
+    FF  03  9A  01  0C  01  A3  5C - Set reader optional params but 01
 10/05/2016 09:29:56.503 AM Received
     FF  00  9A  00  00  A6  33
 
