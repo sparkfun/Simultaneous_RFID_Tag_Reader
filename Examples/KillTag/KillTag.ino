@@ -4,17 +4,9 @@
   Date: October 3rd, 2016
   https://github.com/sparkfun/Simultaneous_RFID_Tag_Reader
 
-  This is a stripped down implementation of the Mercury API from ThingMagic
+  Obviously, be careful because this premanently and irrevocably destroys a tag.
 
-  Module powers on at 115200bps by default. We can change baud rate to 9600bps but it is not saved to memory.
-
-
-  Examples:
-  Just read tags
-  Write a new ID to a tag
-  Write to user memory
-  Kill tag
-
+  This shows how to send the right command (with password) to disable a tag.
 
   Arduino pin 2 to Nano RX
   Arduino pin 3 to Nano TX
@@ -52,28 +44,9 @@ void setup()
 
   nano.setRegion(0x0D); //Set to North America
 
-  nano.setReadPower(2700);
-
-  nano.sendMessage(0x2A, 0, 0); //Clear tag ID buffer
-
-  //nano.setWritePower(2700); //Don't think this is needed?
-
-  //nano.setOptionalParameters();
-  //nano.setOptionalParameters(); //Probably not needed
-
-  //nano.setProtocolParameters();
-  //nano.setOptionalParameters(); //Probably not needed
-
-  nano.setAntennaSearchList(); //Probably not needed
-
   nano.setAntennaPort(); //Set TX/RX antenna ports to 1
 
-  uint8_t blob3[] = {0x00, 0x00};
-  nano.sendMessage(0x10, blob3, sizeof(blob3)); //HW version (not get, not set)
-
-  nano.sendMessage(0x2A, 0, 0); //Clear tag ID buffer
-
-  nano.setAntennaSearchList(); //Probably not needed
+  nano.setReadPower(2700);
 
   uint8_t blob5[] = {0x00, 0x00, 0x13, 0x01, 0xF4};
   nano.sendMessage(0x22, blob5, sizeof(blob5)); //Read tag ID multiple
@@ -83,43 +56,18 @@ void setup()
   nano.sendMessage(0x29, blob4, sizeof(blob4)); //Get tag ID buffer
   if (msg[0] == ALL_GOOD) printResponse();
 
-  nano.setAntennaPort(); //Set TX/RX antenna ports to 1
-
-  
   //nano.killTag(0xAABBCCDD);
   nano.killTag(0x00);
   if (msg[0] == ALL_GOOD) printResponse();
   
   while (1);
 
-  
-  
-  delay(1000);
-
-  //const uint8_t testID[] = "Hello World!";
-  /*const uint8_t testID[] = "test";
-  nano.writeID(testID, sizeof(testID) - 1); //The -1 shaves off the \0 found at the end of any string
-  if (msg[0] == ALL_GOOD) printResponse();
-  else Serial.println("Failed write");*/
-
-  uint8_t myEPC[] = {0xAA, 0xBB};
-  nano.readUserData(myEPC, sizeof(myEPC));  
-  if (msg[0] == ALL_GOOD) printResponse();
-  else Serial.println("Failed read");
-
-  while (1);
-
-  nano.startReading(); //Begin scanning for tags
-
   Serial.println("Go!");
 }
 
 void loop()
 {
-  if (nano.check() == true) //Check to see if any new data has come in from module
-  {
-    nano.parseResponse(); //Break response into tag ID, RSSI, frequency, and timestamp
-  }
+
 }
 
 //Print the current MSG array

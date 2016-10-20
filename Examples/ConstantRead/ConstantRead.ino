@@ -4,16 +4,7 @@
   Date: October 3rd, 2016
   https://github.com/sparkfun/Simultaneous_RFID_Tag_Reader
 
-  This is a stripped down implementation of the Mercury API from ThingMagic
-
-  Module powers on at 115200bps by default. We can change baud rate to 9600bps but it is not saved to memory.
-
-
-  Examples:
-  Just read tags
-  Write a new ID to a tag
-  Write to user memory
-  Kill tag
+  Constantly reads and outputs any tags heard
 
 
   Arduino pin 2 to Nano RX
@@ -44,7 +35,7 @@ void setup()
   //57600 works well except for large comms like reading the freq hop table (205 bytes)
   //38400 works with freq hop table reading
   //9600 may be too slow for reading lots of tags simultaneously
-  if(setupNano(38400) == false) //Configure nano to run at 57600bps
+  if(setupNano(57600) == false) //Configure nano to run at 57600bps
   {
     Serial.println("Module failed to respond. Please check wiring.");
     while(1); //Freeze!
@@ -52,62 +43,14 @@ void setup()
 
   nano.setRegion(0x0D); //Set to North America
 
-  nano.setReadPower(2700);
+  //nano.setReadPower(2700);
+  nano.setReadPower(32000);
 
-  nano.sendMessage(0x2A, 0, 0); //Clear tag ID buffer
-
-  //nano.setWritePower(2700); //Don't think this is needed?
-
-  //nano.setOptionalParameters();
-  //nano.setOptionalParameters(); //Probably not needed
+  nano.setOptionalParameters(); //Enables endless multiread
 
   //nano.setProtocolParameters();
-  //nano.setOptionalParameters(); //Probably not needed
-
-  nano.setAntennaSearchList(); //Probably not needed
 
   nano.setAntennaPort(); //Set TX/RX antenna ports to 1
-
-  uint8_t blob3[] = {0x00, 0x00};
-  nano.sendMessage(0x10, blob3, sizeof(blob3)); //HW version (not get, not set)
-
-  nano.sendMessage(0x2A, 0, 0); //Clear tag ID buffer
-
-  nano.setAntennaSearchList(); //Probably not needed
-
-  uint8_t blob5[] = {0x00, 0x00, 0x13, 0x01, 0xF4};
-  nano.sendMessage(0x22, blob5, sizeof(blob5)); //Read tag ID multiple
-  if (msg[0] == ALL_GOOD) printResponse();
-  
-  uint8_t blob4[] = {0x01, 0xFF, 0x00};
-  nano.sendMessage(0x29, blob4, sizeof(blob4)); //Get tag ID buffer
-  if (msg[0] == ALL_GOOD) printResponse();
-
-  nano.setAntennaPort(); //Set TX/RX antenna ports to 1
-
-  
-  //nano.killTag(0xAABBCCDD);
-  nano.killTag(0x00);
-  if (msg[0] == ALL_GOOD) printResponse();
-  
-  while (1);
-
-  
-  
-  delay(1000);
-
-  //const uint8_t testID[] = "Hello World!";
-  /*const uint8_t testID[] = "test";
-  nano.writeID(testID, sizeof(testID) - 1); //The -1 shaves off the \0 found at the end of any string
-  if (msg[0] == ALL_GOOD) printResponse();
-  else Serial.println("Failed write");*/
-
-  uint8_t myEPC[] = {0xAA, 0xBB};
-  nano.readUserData(myEPC, sizeof(myEPC));  
-  if (msg[0] == ALL_GOOD) printResponse();
-  else Serial.println("Failed read");
-
-  while (1);
 
   nano.startReading(); //Begin scanning for tags
 

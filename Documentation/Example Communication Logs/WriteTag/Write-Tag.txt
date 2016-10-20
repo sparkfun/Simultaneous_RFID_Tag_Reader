@@ -128,7 +128,7 @@
 10/12/2016 02:38:04.300 PM Received
     FF  03  61  00  00  05  01  00  61  DF
 10/12/2016 02:38:04.300 PM Sending
-    FF  01  61  05  BD  B8 - (Done) et antenna port (dup)
+    FF  01  61  05  BD  B8 - (Done) Get antenna port (dup)
 10/12/2016 02:38:04.316 PM Received
     FF  03  61  00  00  05  01  00  61  DF
 10/12/2016 02:38:04.316 PM Sending
