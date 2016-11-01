@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22021,6 +22021,8 @@ them to 5V.</text>
 <text x="441.96" y="261.62" size="2.54" layer="97">Finalized trace antenna design and matching network</text>
 <text x="436.88" y="271.78" size="2.54" layer="97">Changes on v10:</text>
 <text x="441.96" y="256.54" size="2.54" layer="97">Added thermals to user solderable GND connections</text>
+<text x="129.54" y="111.76" size="1.778" layer="97">Caution: Module gets hot
+when reading at full power</text>
 </plain>
 <instances>
 <instance part="STANDOFF4" gate="G$1" x="426.72" y="38.1"/>
