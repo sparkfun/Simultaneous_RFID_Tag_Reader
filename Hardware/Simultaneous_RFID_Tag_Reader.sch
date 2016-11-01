@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21936,8 +21936,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP"/>
-<part name="C7" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="TBD"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="TBD"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -21957,6 +21957,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="L1" library="ThingMagic_Module" deviceset="3.9NH_-+0.3NH_300MA(0603)" device="0603" value="3.9nH"/>
 <part name="E1" library="ThingMagic_Module" deviceset="ANTENNA_GROUNDED" device="1" value="Trace Antenna"/>
 <part name="SG1" library="ThingMagic_Module" deviceset="BUZZER" device="SMD2" value="Buzzer"/>
+<part name="STANDOFF7" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="STANDOFF8" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22013,16 +22015,16 @@ want feeding back to USB</text>
 <vertex x="125.984" y="213.106" curve="-90"/>
 <vertex x="124.46" y="211.582" curve="-90"/>
 </polygon>
-<text x="381" y="182.88" size="1.778" layer="97">These 3 GPIO-LV Pins are 
+<text x="381" y="182.88" size="1.778" layer="97">These 3 GPIO-LV pins are 
 3.3V tolerant. Do not expose 
 them to 5V.</text>
-<text x="63.5" y="259.08" size="1.778" layer="91">Lack of thermals makes soldering hard - add thermals to all gnd solder connections</text>
-<text x="441.96" y="266.7" size="2.54" layer="97">Decreased size of RF pad to avoid GND pad on module.</text>
-<text x="441.96" y="261.62" size="2.54" layer="97">Finalized trace antenna design and matching network</text>
-<text x="436.88" y="271.78" size="2.54" layer="97">Changes on v10:</text>
-<text x="441.96" y="256.54" size="2.54" layer="97">Added thermals to user solderable GND connections</text>
+<text x="10.16" y="40.64" size="2.54" layer="97">Decreased size of RF pad to avoid GND pad on module</text>
+<text x="10.16" y="35.56" size="2.54" layer="97">Finalized trace antenna design and matching network</text>
+<text x="5.08" y="45.72" size="2.54" layer="97">Changes on v10:</text>
+<text x="10.16" y="30.48" size="2.54" layer="97">Added thermals to user solderable GND connections</text>
 <text x="129.54" y="111.76" size="1.778" layer="97">Caution: Module gets hot
 when reading at full power</text>
+<text x="10.16" y="25.4" size="2.54" layer="97">Opened up heatsink area on bottom of PCB</text>
 </plain>
 <instances>
 <instance part="STANDOFF4" gate="G$1" x="426.72" y="38.1"/>
@@ -22031,8 +22033,8 @@ when reading at full power</text>
 <instance part="STANDOFF1" gate="G$1" x="421.64" y="43.18"/>
 <instance part="FID1" gate="G$1" x="416.56" y="38.1"/>
 <instance part="FID2" gate="G$1" x="416.56" y="43.18"/>
-<instance part="LOGO1" gate="G$1" x="86.36" y="2.54"/>
-<instance part="LOGO2" gate="G$1" x="66.04" y="15.24"/>
+<instance part="LOGO1" gate="G$1" x="271.78" y="2.54"/>
+<instance part="LOGO2" gate="G$1" x="251.46" y="15.24"/>
 <instance part="R3" gate="G$1" x="144.78" y="147.32"/>
 <instance part="U2" gate="G$1" x="304.8" y="236.22"/>
 <instance part="SUPPLY4" gate="G$1" x="83.82" y="152.4"/>
@@ -22098,7 +22100,7 @@ when reading at full power</text>
 <instance part="SUPPLY8" gate="G$1" x="43.18" y="154.94"/>
 <instance part="GND21" gate="1" x="119.38" y="114.3"/>
 <instance part="C2" gate="G$1" x="55.88" y="134.62"/>
-<instance part="LOGO3" gate="G$1" x="86.36" y="2.54"/>
+<instance part="LOGO3" gate="G$1" x="271.78" y="2.54"/>
 <instance part="J7" gate="J$1" x="406.4" y="200.66" rot="MR0"/>
 <instance part="TP1" gate="G$1" x="88.9" y="152.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="86.868" y="155.956" size="1.778" layer="95" font="vector"/>
@@ -22122,6 +22124,8 @@ when reading at full power</text>
 <attribute name="NAME" x="312.674" y="89.662" size="1.778" layer="95"/>
 <attribute name="VALUE" x="312.674" y="86.868" size="1.778" layer="96"/>
 </instance>
+<instance part="STANDOFF7" gate="G$1" x="421.64" y="48.26"/>
+<instance part="STANDOFF8" gate="G$1" x="426.72" y="48.26"/>
 </instances>
 <busses>
 </busses>
