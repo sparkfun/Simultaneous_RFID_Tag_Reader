@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21969,12 +21969,12 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <wire x1="220.98" y1="53.34" x2="0" y2="53.34" width="0.2032" layer="97" style="longdash"/>
 <wire x1="220.98" y1="279.4" x2="220.98" y2="177.8" width="0.2032" layer="97" style="longdash"/>
 <text x="304.8" y="182.88" size="2.54" layer="97" align="center">Interface and Logic Conversion</text>
-<text x="281.94" y="167.64" size="2.54" layer="97">VCC must be 3.3-5.5V</text>
+<text x="281.94" y="167.64" size="2.54" layer="97">VCC must be 3.7-5.5V</text>
 <text x="335.28" y="147.32" size="1.778" layer="97">Internal DC-DC will use the 
 following (Max): 
     720mA @ 5V
     972mA @ 3.7V
-    1091mA @ 3.3V</text>
+</text>
 <text x="116.84" y="101.6" size="2.54" layer="97" align="center">RFID Module</text>
 <text x="83.82" y="220.98" size="1.778" layer="97">SJ1 and SJ2 select
 between PCB antenna
@@ -22025,6 +22025,9 @@ them to 5V.</text>
 <text x="129.54" y="111.76" size="1.778" layer="97">Caution: Module gets hot
 when reading at full power</text>
 <text x="10.16" y="25.4" size="2.54" layer="97">Opened up heatsink area on bottom of PCB</text>
+<text x="312.42" y="210.82" size="1.778" layer="97">This buffer does not operate
+when VCCA &gt; VCCB. VCC must
+be greater than 3.3V.</text>
 </plain>
 <instances>
 <instance part="STANDOFF4" gate="G$1" x="426.72" y="38.1"/>
