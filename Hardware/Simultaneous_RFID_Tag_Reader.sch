@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21936,8 +21936,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="TBD"/>
-<part name="C7" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="TBD"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="DNP"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="1.0PF" device="-0603-50V-25%" value="0.0"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -22095,7 +22095,7 @@ be greater than 3.3V.</text>
 <instance part="GND4" gate="1" x="160.02" y="218.44"/>
 <instance part="C3" gate="G$1" x="152.4" y="213.36"/>
 <instance part="C4" gate="G$1" x="152.4" y="182.88"/>
-<instance part="C7" gate="G$1" x="147.32" y="190.5" rot="R90"/>
+<instance part="C7" gate="G$1" x="134.62" y="190.5" rot="R90"/>
 <instance part="GND5" gate="1" x="152.4" y="175.26"/>
 <instance part="D1" gate="G$1" x="43.18" y="137.16"/>
 <instance part="GND20" gate="1" x="43.18" y="127"/>
@@ -22628,7 +22628,7 @@ be greater than 3.3V.</text>
 <segment>
 <pinref part="SJ2" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="193.04" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="190.5" x2="142.24" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="190.5" x2="129.54" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -22636,7 +22636,7 @@ be greater than 3.3V.</text>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="190.5" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="190.5" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="190.5" x2="152.4" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="190.5" x2="154.94" y2="190.5" width="0.1524" layer="91"/>
 <junction x="152.4" y="190.5"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2414,10 +2414,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="C3" library="SparkFun-Capacitors" package="0603" value="DNP" x="62.23" y="14.859" rot="R90">
 <attribute name="PROD_ID" value="CAP-07879" x="62.23" y="14.859" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" package="0603" value="TBD" x="51.943" y="19.685" rot="R180">
+<element name="C4" library="SparkFun-Capacitors" package="0603" value="DNP" x="51.943" y="19.685" rot="R180">
 <attribute name="PROD_ID" value="CAP-07879" x="51.943" y="19.685" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
-<element name="C7" library="SparkFun-Capacitors" package="0603" value="TBD" x="52.832" y="17.272" rot="R90">
+<element name="C7" library="SparkFun-Capacitors" package="0603" value="0.0" x="52.832" y="17.272" rot="R90">
 <attribute name="PROD_ID" value="CAP-07879" x="52.832" y="17.272" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="RED" x="16.51" y="8.89" rot="R90">
