@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21959,6 +21959,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="SG1" library="ThingMagic_Module" deviceset="BUZZER" device="SMD2" value="Buzzer"/>
 <part name="STANDOFF7" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF8" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
+<part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21971,9 +21972,9 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <text x="304.8" y="182.88" size="2.54" layer="97" align="center">Interface and Logic Conversion</text>
 <text x="281.94" y="167.64" size="2.54" layer="97">VCC must be 3.7-5.5V</text>
 <text x="335.28" y="147.32" size="1.778" layer="97">Internal DC-DC will use the 
-following (Max): 
-    720mA @ 5V
-    972mA @ 3.7V
+following: 
+    900mA @ 5V
+    1100mA @ 3.7V
 </text>
 <text x="116.84" y="101.6" size="2.54" layer="97" align="center">RFID Module</text>
 <text x="83.82" y="220.98" size="1.778" layer="97">SJ1 and SJ2 select
@@ -22129,6 +22130,7 @@ be greater than 3.3V.</text>
 </instance>
 <instance part="STANDOFF7" gate="G$1" x="421.64" y="48.26"/>
 <instance part="STANDOFF8" gate="G$1" x="426.72" y="48.26"/>
+<instance part="GND22" gate="1" x="114.3" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -22335,6 +22337,11 @@ be greater than 3.3V.</text>
 <wire x1="119.38" y1="124.46" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="U4" gate="U1" pin="GNDP2"/>
+</segment>
+<segment>
+<pinref part="U4" gate="U1" pin="GNDP1"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="114.3" y1="124.46" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">

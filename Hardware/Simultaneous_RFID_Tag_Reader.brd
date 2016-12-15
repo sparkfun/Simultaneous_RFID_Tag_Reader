@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -2801,6 +2801,13 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <via x="19.05" y="7.62" extent="1-16" drill="0.381"/>
 <via x="16.51" y="7.62" extent="1-16" drill="0.381"/>
 <via x="13.97" y="7.62" extent="1-16" drill="0.381"/>
+<contactref element="U4" pad="GND_PAD1"/>
+<wire x1="30.734" y1="24.13" x2="30.67" y2="24.13" width="0.254" layer="16"/>
+<wire x1="30.67" y1="24.13" x2="30.11" y2="23.57" width="0.254" layer="16"/>
+<wire x1="31.95" y1="24.05" x2="32" y2="24.1" width="0.254" layer="1"/>
+<wire x1="30.11" y1="23.57" x2="31.47" y2="23.57" width="0.254" layer="1"/>
+<wire x1="31.47" y1="23.57" x2="31.95" y2="24.05" width="0.254" layer="1"/>
+<wire x1="30.11" y1="23.57" x2="30.11" y2="23.57" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$30">
 </signal>
