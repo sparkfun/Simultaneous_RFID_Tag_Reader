@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16889,6 +16889,27 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 </device>
 </devices>
 </deviceset>
+<deviceset name="47PF" prefix="C">
+<description>&lt;h3&gt;47pF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-50V-5%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08913"/>
+<attribute name="VALUE" value="47pF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-Connectors">
@@ -21960,6 +21981,15 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="STANDOFF7" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF8" library="SparkFun-Electromechanical" deviceset="STAND-OFF" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="47PF" device="-0603-50V-5%" value="47pF"/>
+<part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="47PF" device="-0603-50V-5%" value="47pF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="47PF" device="-0603-50V-5%" value="47pF"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="47PF" device="-0603-50V-5%" value="47pF"/>
+<part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21968,7 +21998,7 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <text x="354.33" y="11.43" size="2.54" layer="94">N. Seidle</text>
 <wire x1="431.8" y1="53.34" x2="220.98" y2="53.34" width="0.2032" layer="97" style="longdash"/>
 <wire x1="220.98" y1="53.34" x2="0" y2="53.34" width="0.2032" layer="97" style="longdash"/>
-<wire x1="220.98" y1="279.4" x2="220.98" y2="177.8" width="0.2032" layer="97" style="longdash"/>
+<wire x1="198.12" y1="279.4" x2="198.12" y2="177.8" width="0.2032" layer="97" style="longdash"/>
 <text x="304.8" y="182.88" size="2.54" layer="97" align="center">Interface and Logic Conversion</text>
 <text x="281.94" y="167.64" size="2.54" layer="97">VCC must be 3.7-5.5V</text>
 <text x="335.28" y="147.32" size="1.778" layer="97">Internal DC-DC will use the 
@@ -21992,15 +22022,15 @@ external antenna.</text>
 Serial</text>
 <text x="340.36" y="99.06" size="1.778" layer="97" align="center">Software
 Serial</text>
-<wire x1="220.98" y1="177.8" x2="220.98" y2="132.08" width="0.2032" layer="97" style="longdash"/>
 <wire x1="220.98" y1="132.08" x2="220.98" y2="53.34" width="0.2032" layer="97" style="longdash"/>
 <wire x1="340.36" y1="114.3" x2="340.36" y2="101.6" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="340.36" y1="114.3" x2="341.122" y2="113.538" width="0.2032" layer="97" style="longdash"/>
 <wire x1="340.36" y1="101.6" x2="341.122" y2="102.362" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="340.36" y1="101.6" x2="339.598" y2="102.362" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="340.36" y1="114.3" x2="339.598" y2="113.538" width="0.2032" layer="97" style="shortdash"/>
-<wire x1="220.98" y1="177.8" x2="429.26" y2="177.8" width="0.2032" layer="97" style="longdash"/>
+<wire x1="198.12" y1="177.8" x2="220.98" y2="177.8" width="0.2032" layer="97" style="longdash"/>
 <text x="304.8" y="137.16" size="2.54" layer="97" align="center">External Power</text>
+<wire x1="220.98" y1="177.8" x2="429.26" y2="177.8" width="0.2032" layer="97" style="longdash"/>
 <wire x1="220.98" y1="132.08" x2="431.8" y2="132.08" width="0.2032" layer="97" style="longdash"/>
 <text x="307.34" y="58.42" size="2.54" layer="97" align="center">Shield and Serial Select</text>
 <text x="83.82" y="218.44" size="1.778" layer="97">Default is PCB antenna.</text>
@@ -22029,6 +22059,8 @@ when reading at full power</text>
 <text x="312.42" y="210.82" size="1.778" layer="97">This buffer does not operate
 when VCCA &gt; VCCB. VCC must
 be greater than 3.3V.</text>
+<text x="215.9" y="198.12" size="1.778" layer="97">RF Noise Supressors</text>
+<wire x1="220.98" y1="132.08" x2="220.98" y2="177.8" width="0.2032" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="STANDOFF4" gate="G$1" x="426.72" y="38.1"/>
@@ -22058,10 +22090,10 @@ be greater than 3.3V.</text>
 <instance part="GND16" gate="1" x="281.94" y="147.32"/>
 <instance part="J3" gate="G$1" x="292.1" y="152.4" rot="MR0"/>
 <instance part="GND17" gate="1" x="139.7" y="124.46"/>
-<instance part="C9" gate="G$1" x="254" y="213.36"/>
+<instance part="C9" gate="G$1" x="256.54" y="213.36"/>
 <instance part="C12" gate="G$1" x="66.04" y="134.62"/>
-<instance part="SUPPLY14" gate="G$1" x="254" y="220.98"/>
-<instance part="GND18" gate="1" x="254" y="205.74"/>
+<instance part="SUPPLY14" gate="G$1" x="256.54" y="220.98"/>
+<instance part="GND18" gate="1" x="256.54" y="205.74"/>
 <instance part="SUPPLY1" gate="G$1" x="66.04" y="142.24"/>
 <instance part="SUPPLY2" gate="G$1" x="55.88" y="142.24"/>
 <instance part="GND1" gate="1" x="66.04" y="127"/>
@@ -22124,13 +22156,22 @@ be greater than 3.3V.</text>
 <instance part="U4" gate="U1" x="116.84" y="152.4"/>
 <instance part="L1" gate="L1" x="137.16" y="220.98" rot="R90"/>
 <instance part="E1" gate="E1" x="157.48" y="228.6"/>
-<instance part="SG1" gate="SG1" x="307.34" y="88.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="312.674" y="89.662" size="1.778" layer="95"/>
-<attribute name="VALUE" x="312.674" y="86.868" size="1.778" layer="96"/>
+<instance part="SG1" gate="SG1" x="314.96" y="88.9" smashed="yes" rot="R270">
+<attribute name="NAME" x="320.294" y="89.662" size="1.778" layer="95"/>
+<attribute name="VALUE" x="320.294" y="86.868" size="1.778" layer="96"/>
 </instance>
 <instance part="STANDOFF7" gate="G$1" x="421.64" y="48.26"/>
 <instance part="STANDOFF8" gate="G$1" x="426.72" y="48.26"/>
 <instance part="GND22" gate="1" x="114.3" y="114.3"/>
+<instance part="C1" gate="G$1" x="246.38" y="213.36"/>
+<instance part="GND23" gate="1" x="246.38" y="205.74"/>
+<instance part="C5" gate="G$1" x="236.22" y="213.36"/>
+<instance part="C6" gate="G$1" x="226.06" y="213.36"/>
+<instance part="C8" gate="G$1" x="215.9" y="213.36"/>
+<instance part="GND24" gate="1" x="309.88" y="81.28"/>
+<instance part="GND25" gate="1" x="236.22" y="205.74"/>
+<instance part="GND26" gate="1" x="226.06" y="205.74"/>
+<instance part="GND27" gate="1" x="215.9" y="205.74"/>
 </instances>
 <busses>
 </busses>
@@ -22266,7 +22307,7 @@ be greater than 3.3V.</text>
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="254" y1="208.28" x2="254" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="208.28" x2="256.54" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
@@ -22342,6 +22383,32 @@ be greater than 3.3V.</text>
 <pinref part="U4" gate="U1" pin="GNDP1"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="114.3" y1="124.46" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="246.38" y1="208.28" x2="246.38" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SG1" gate="SG1" pin="2"/>
+<wire x1="312.42" y1="86.36" x2="309.88" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="86.36" x2="309.88" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="236.22" y1="208.28" x2="236.22" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+<wire x1="226.06" y1="208.28" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+<wire x1="215.9" y1="208.28" x2="215.9" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -22440,7 +22507,7 @@ be greater than 3.3V.</text>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
-<wire x1="254" y1="220.98" x2="254" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="220.98" x2="256.54" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
@@ -22456,14 +22523,18 @@ be greater than 3.3V.</text>
 <net name="ENABLE-LV" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="A3"/>
-<label x="259.08" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="213.36" y="233.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="289.56" y1="233.68" x2="281.94" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="U3" gate="U1" pin="IO2"/>
-<wire x1="281.94" y1="233.68" x2="259.08" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="233.68" x2="226.06" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="233.68" x2="213.36" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="213.36" x2="276.86" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="210.82" x2="281.94" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="210.82" x2="281.94" y2="233.68" width="0.1524" layer="91"/>
 <junction x="281.94" y="233.68"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="218.44" x2="226.06" y2="233.68" width="0.1524" layer="91"/>
+<junction x="226.06" y="233.68"/>
 </segment>
 <segment>
 <wire x1="96.52" y1="147.32" x2="93.98" y2="147.32" width="0.1524" layer="91"/>
@@ -22479,12 +22550,16 @@ be greater than 3.3V.</text>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="A1"/>
-<label x="259.08" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="213.36" y="238.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="289.56" y1="238.76" x2="271.78" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="U3" gate="U1" pin="IO4"/>
-<wire x1="271.78" y1="238.76" x2="259.08" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="238.76" x2="246.38" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="238.76" x2="213.36" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="228.6" x2="271.78" y2="238.76" width="0.1524" layer="91"/>
 <junction x="271.78" y="238.76"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="246.38" y1="218.44" x2="246.38" y2="238.76" width="0.1524" layer="91"/>
+<junction x="246.38" y="238.76"/>
 </segment>
 </net>
 <net name="RXI-LV" class="0">
@@ -22495,25 +22570,33 @@ be greater than 3.3V.</text>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="A2"/>
-<label x="259.08" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="213.36" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="289.56" y1="236.22" x2="276.86" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="U3" gate="U1" pin="IO3"/>
-<wire x1="276.86" y1="236.22" x2="259.08" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="236.22" x2="236.22" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="236.22" x2="213.36" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="228.6" x2="276.86" y2="236.22" width="0.1524" layer="91"/>
 <junction x="276.86" y="236.22"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="218.44" x2="236.22" y2="236.22" width="0.1524" layer="91"/>
+<junction x="236.22" y="236.22"/>
 </segment>
 </net>
 <net name="GPIO1-LV" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="A4"/>
 <wire x1="289.56" y1="231.14" x2="266.7" y2="231.14" width="0.1524" layer="91"/>
-<label x="259.08" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="213.36" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U3" gate="U1" pin="IO1"/>
-<wire x1="266.7" y1="231.14" x2="259.08" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="231.14" x2="215.9" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="231.14" x2="213.36" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="213.36" x2="271.78" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="210.82" x2="266.7" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="210.82" x2="266.7" y2="231.14" width="0.1524" layer="91"/>
 <junction x="266.7" y="231.14"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="218.44" x2="215.9" y2="231.14" width="0.1524" layer="91"/>
+<junction x="215.9" y="231.14"/>
 </segment>
 <segment>
 <wire x1="96.52" y1="144.78" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
@@ -22718,15 +22801,8 @@ be greater than 3.3V.</text>
 <net name="N$11" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="*D9"/>
-<wire x1="302.26" y1="88.9" x2="304.8" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="88.9" x2="312.42" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SG1" gate="SG1" pin="1"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="B1" gate="G$1" pin="*D10"/>
-<wire x1="302.26" y1="86.36" x2="304.8" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SG1" gate="SG1" pin="2"/>
 </segment>
 </net>
 </nets>

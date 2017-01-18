@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -172,10 +172,10 @@
 <text x="46.99" y="26.67" size="1.778" layer="21" font="vector" ratio="15" rot="R90" align="center">Simultaneous
 RFID Tag
 Reader</text>
-<text x="29.21" y="-29.21" size="1.778" layer="51" font="vector" ratio="15">N. Seidle</text>
+<text x="30.48" y="-35.56" size="1.778" layer="51" font="vector" ratio="15">N. Seidle</text>
 <dimension x1="59.69" y1="49.53" x2="63.5" y2="57.15" x3="63.5" y3="57.15" textsize="1.778" textratio="15" layer="47" dtype="leader" unit="inch"/>
 <text x="64.77" y="57.15" size="1.778" layer="47" font="vector" ratio="15">Clears 4-40 Screw</text>
-<text x="15.24" y="-22.86" size="1.778" layer="47" font="vector" ratio="15">All Dimensions in Inches</text>
+<text x="15.24" y="-25.4" size="1.778" layer="47" font="vector" ratio="15">All Dimensions in Inches</text>
 <text x="3.429" y="36.957" size="1.27" layer="21" font="vector" ratio="15" rot="R270" align="center">GRN</text>
 <text x="3.429" y="24.257" size="1.27" layer="21" font="vector" ratio="15" rot="R270" align="center">BLK</text>
 <text x="9.779" y="44.45" size="1.778" layer="21" font="vector" ratio="15" rot="R270" align="center">+</text>
@@ -225,17 +225,17 @@ Reader</text>
 <text x="37.338" y="43.307" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center">SW-UART</text>
 <text x="16.637" y="6.985" size="1.27" layer="21" font="vector" ratio="15" align="center">POWER</text>
 <text x="53.34" y="12.319" size="1.27" layer="21" font="vector" ratio="15" align="center">ANT Select</text>
-<dimension x1="0" y1="0" x2="0" y2="53.34" x3="-19.05" y3="26.67" textsize="1.016" textratio="15" layer="47" unit="inch"/>
-<dimension x1="0" y1="0" x2="77.47" y2="0" x3="38.735" y3="-19.05" textsize="1.016" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="0" x2="0" y2="53.34" x3="-24.13" y3="26.67" textsize="1.016" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="0" x2="77.47" y2="0" x3="38.735" y3="-21.59" textsize="1.016" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="0" x2="3.81" y2="0" x3="1.905" y3="-2.54" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="0" y1="0" x2="59.69" y2="3.81" x3="29.845" y3="-13.97" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="59.69" y2="3.81" x3="29.845" y3="-16.51" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="0" y1="0" x2="3.81" y2="3.81" x3="-1.27" y3="1.905" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="3.81" y2="49.53" x3="-16.51" y3="24.765" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="64.77" y2="-1.27" x3="32.385" y3="-16.51" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="0" y1="0" x2="1.27" y2="16.51" x3="-6.35" y3="8.255" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="7.62" y2="43.18" x3="-13.97" y3="21.59" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="52.832" y2="22.7965" x3="-8.89" y3="11.39825" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="52.832" y2="22.7965" x3="26.416" y3="-8.89" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="3.81" y2="49.53" x3="-21.59" y3="24.765" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="64.77" y2="-1.27" x3="32.385" y3="-19.05" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="1.27" y2="16.51" x3="-8.89" y3="8.255" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="7.62" y2="43.18" x3="-19.05" y3="21.59" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="52.832" y2="22.7965" x3="-11.43" y3="11.39825" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="52.832" y2="22.7965" x3="26.416" y3="-11.43" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="77.47" y1="8.89" x2="77.47" y2="44.45" x3="85.09" y3="26.67" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
 <text x="11.176" y="43.307" size="1.27" layer="21" font="vector" ratio="15" rot="R270" align="center">3.7-5V</text>
 <text x="11.176" y="43.307" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center">3.7-5V</text>
@@ -262,14 +262,21 @@ Reader</text>
 <vertex x="16.51" y="36.83"/>
 <vertex x="16.51" y="15.24"/>
 <vertex x="59.69" y="15.24"/>
+<vertex x="59.69" y="22.86"/>
+<vertex x="52.07" y="22.86"/>
+<vertex x="52.07" y="33.02"/>
+<vertex x="59.69" y="33.02"/>
 </polygon>
 <text x="14.732" y="26.543" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center">Warning: Hot!</text>
-<dimension x1="0" y1="0" x2="53.34" y2="31.75" x3="26.67" y3="-11.43" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="53.34" y2="31.75" x3="26.67" y3="-13.97" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="0" y1="0" x2="11.43" y2="11.43" x3="5.715" y3="-6.35" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="0" y1="0" x2="11.43" y2="11.43" x3="-3.81" y3="5.715" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="53.34" y2="31.75" x3="-11.43" y3="15.875" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="53.34" y2="31.75" x3="-13.97" y3="15.875" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
 <text x="30.48" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center">BZ1</text>
 <text x="27.94" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center">BZ2</text>
+<dimension x1="0" y1="0" x2="16.51" y2="15.24" x3="-6.35" y3="7.62" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="16.51" y2="36.83" x3="-16.51" y3="18.415" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="16.51" y2="15.24" x3="8.255" y3="-8.89" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -2410,7 +2417,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="SF_SKU" value="COM-00597" x="41.91" y="43.18" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="PROD_ID" value="SWCH-08179" x="41.91" y="43.18" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
-<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="-1.27" y="-29.21"/>
+<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="0" y="-35.56"/>
 <element name="C3" library="SparkFun-Capacitors" package="0603" value="DNP" x="62.23" y="14.859" rot="R90">
 <attribute name="PROD_ID" value="CAP-07879" x="62.23" y="14.859" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
@@ -2452,6 +2459,18 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="STANDOFF7" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="11.43" y="11.43"/>
 <element name="STANDOFF8" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="53.34" y="31.75"/>
+<element name="C1" library="SparkFun-Capacitors" package="0603" value="47pF" x="34.29" y="60.96" rot="R90">
+<attribute name="PROD_ID" value="CAP-08913" x="34.29" y="60.96" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+</element>
+<element name="C5" library="SparkFun-Capacitors" package="0603" value="47pF" x="22.86" y="60.96" rot="R90">
+<attribute name="PROD_ID" value="CAP-08913" x="22.86" y="60.96" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+</element>
+<element name="C6" library="SparkFun-Capacitors" package="0603" value="47pF" x="26.67" y="60.96" rot="R90">
+<attribute name="PROD_ID" value="CAP-08913" x="26.67" y="60.96" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+</element>
+<element name="C8" library="SparkFun-Capacitors" package="0603" value="47pF" x="30.48" y="60.96" rot="R90">
+<attribute name="PROD_ID" value="CAP-08913" x="30.48" y="60.96" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -2804,9 +2823,17 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U4" pad="GND_PAD1"/>
 <wire x1="30.734" y1="24.13" x2="30.67" y2="24.13" width="0.254" layer="16"/>
 <wire x1="30.67" y1="24.13" x2="30.11" y2="23.57" width="0.254" layer="16"/>
-<wire x1="31.95" y1="24.05" x2="32" y2="24.1" width="0.254" layer="1"/>
 <wire x1="30.11" y1="23.57" x2="31.47" y2="23.57" width="0.254" layer="1"/>
-<wire x1="31.47" y1="23.57" x2="31.95" y2="24.05" width="0.254" layer="1"/>
+<wire x1="31.47" y1="23.57" x2="32" y2="24.1" width="0.254" layer="1"/>
+<contactref element="C1" pad="2"/>
+<contactref element="SG1" pad="-"/>
+<contactref element="C5" pad="2"/>
+<contactref element="C6" pad="2"/>
+<contactref element="C8" pad="2"/>
+<wire x1="30.48" y1="61.81" x2="34.29" y2="61.81" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="61.81" x2="30.48" y2="61.81" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="61.81" x2="26.67" y2="61.81" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="50.8" x2="22.86" y2="61.81" width="0" layer="19" extent="1-1"/>
 <wire x1="30.11" y1="23.57" x2="30.11" y2="23.57" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$30">
@@ -2955,6 +2982,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U4" pad="11"/>
 <wire x1="27.71" y1="37.17" x2="27.71" y2="39.14" width="0.254" layer="1"/>
 <wire x1="27.71" y1="39.14" x2="27.94" y2="39.37" width="0.254" layer="1"/>
+<contactref element="C6" pad="1"/>
+<wire x1="29.21" y1="42.672" x2="26.67" y2="60.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO-LV">
 <contactref element="U2" pad="2"/>
@@ -2976,6 +3005,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U4" pad="20"/>
 <wire x1="20.21" y1="16.17" x2="20.21" y2="12.717" width="0.254" layer="1"/>
 <wire x1="20.21" y1="12.717" x2="20.193" y2="12.7" width="0.254" layer="1"/>
+<contactref element="C1" pad="1"/>
+<wire x1="33.975" y1="44.5551" x2="34.29" y2="60.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXI-LV">
 <contactref element="U2" pad="3"/>
@@ -3001,6 +3032,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U4" pad="21"/>
 <wire x1="21.46" y1="16.17" x2="21.46" y2="13.973" width="0.254" layer="1"/>
 <wire x1="21.46" y1="13.973" x2="21.463" y2="13.97" width="0.254" layer="1"/>
+<contactref element="C5" pad="1"/>
+<wire x1="27.94" y1="43.18" x2="22.86" y2="60.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO1-LV">
 <contactref element="U2" pad="5"/>
@@ -3018,6 +3051,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U4" pad="12"/>
 <wire x1="26.46" y1="37.17" x2="26.46" y2="39.033" width="0.254" layer="1"/>
 <wire x1="26.46" y1="39.033" x2="26.543" y2="39.116" width="0.254" layer="1"/>
+<contactref element="C8" pad="1"/>
+<wire x1="29.845" y1="41.91" x2="30.48" y2="60.11" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="U2" pad="14"/>
@@ -3245,19 +3280,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="56.642" y1="45.72" x2="53.34" y2="45.72" width="0.254" layer="1"/>
 <wire x1="57.34" y1="45.022" x2="56.642" y2="45.72" width="0.254" layer="1"/>
 <wire x1="52.578" y1="46.482" x2="36.957" y2="46.482" width="0.254" layer="16"/>
-</signal>
-<signal name="N$13">
-<contactref element="B1" pad="D10"/>
-<contactref element="SG1" pad="-"/>
-<wire x1="49.34" y1="43.18" x2="49.34" y2="44.26" width="0.254" layer="1"/>
-<wire x1="49.34" y1="44.26" x2="50.8" y2="45.72" width="0.254" layer="1"/>
-<wire x1="50.8" y1="45.72" x2="52.07" y2="45.72" width="0.254" layer="1"/>
-<via x="52.07" y="45.72" extent="1-16" drill="0.381"/>
-<wire x1="52.07" y1="45.72" x2="36.83" y2="45.72" width="0.254" layer="16"/>
-<wire x1="27.94" y1="50.8" x2="27.94" y2="49.403" width="0.254" layer="16"/>
-<wire x1="27.94" y1="49.403" x2="28.448" y2="48.895" width="0.254" layer="16"/>
-<wire x1="28.448" y1="48.895" x2="33.655" y2="48.895" width="0.254" layer="16"/>
-<wire x1="33.655" y1="48.895" x2="36.83" y2="45.72" width="0.254" layer="16"/>
 </signal>
 </signals>
 <errors>
