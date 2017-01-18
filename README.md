@@ -1,11 +1,13 @@
-MAX30105 Breakout
+SparkFun Simultaneous RFID Tag Reader Breakout
 =======
 
-![MAX30105 Breakout Board](https://raw.githubusercontent.com/sparkfun/OpenScale/master/Hive-Electronics.jpg)
+![SparkFun Simultaneous RFID Tag Reader](https://cdn.sparkfun.com/assets/learn_tutorials/6/1/3/RFID_Read_Distance2.jpg)
 
-A breakout board for the MAX30105 Particle Sensor. This sensor uses three LEDs (Red, Green, IR) to shine different wavelengths of light at any particle in front of the photo detector. Based on the reflection the sensor outputs readings. It is up to the user to create the algorithms to detect different particles and/or SpO2 and/or do Pulse Detection.
+A breakout board the for UHF RFID module (M6E-NANO) from ThingMagic. Capable of reading multiple 860-920MHz UHF RFID tags at the same time with increased read distance. You can also write to tags to boot. 
 
-Board requires 5V to run LEDs. It has onboard voltage regulation and BSS138 MOSFETs to convert from larger logic voltages (5V) down to the needed 1.8V.
+Board works either as shield or as stand alone device (using a USB to Serial converter).
+
+See [product page](https://www.sparkfun.com/products/14066) for more info.
 
 License Information
 -------------------

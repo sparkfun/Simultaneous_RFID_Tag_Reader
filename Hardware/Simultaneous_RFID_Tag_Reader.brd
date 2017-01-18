@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -172,10 +172,10 @@
 <text x="46.99" y="26.67" size="1.778" layer="21" font="vector" ratio="15" rot="R90" align="center">Simultaneous
 RFID Tag
 Reader</text>
-<text x="29.21" y="-29.21" size="1.778" layer="51" font="vector" ratio="15">N. Seidle</text>
+<text x="30.48" y="-34.29" size="1.778" layer="51" font="vector" ratio="15">N. Seidle</text>
 <dimension x1="59.69" y1="49.53" x2="63.5" y2="57.15" x3="63.5" y3="57.15" textsize="1.778" textratio="15" layer="47" dtype="leader" unit="inch"/>
 <text x="64.77" y="57.15" size="1.778" layer="47" font="vector" ratio="15">Clears 4-40 Screw</text>
-<text x="15.24" y="-22.86" size="1.778" layer="47" font="vector" ratio="15">All Dimensions in Inches</text>
+<text x="15.24" y="-25.4" size="1.778" layer="47" font="vector" ratio="15">All Dimensions in Inches</text>
 <text x="3.429" y="36.957" size="1.27" layer="21" font="vector" ratio="15" rot="R270" align="center">GRN</text>
 <text x="3.429" y="24.257" size="1.27" layer="21" font="vector" ratio="15" rot="R270" align="center">BLK</text>
 <text x="9.779" y="44.45" size="1.778" layer="21" font="vector" ratio="15" rot="R270" align="center">+</text>
@@ -225,17 +225,17 @@ Reader</text>
 <text x="37.338" y="43.307" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center">SW-UART</text>
 <text x="16.637" y="6.985" size="1.27" layer="21" font="vector" ratio="15" align="center">POWER</text>
 <text x="53.34" y="12.319" size="1.27" layer="21" font="vector" ratio="15" align="center">ANT Select</text>
-<dimension x1="0" y1="0" x2="0" y2="53.34" x3="-19.05" y3="26.67" textsize="1.016" textratio="15" layer="47" unit="inch"/>
-<dimension x1="0" y1="0" x2="77.47" y2="0" x3="38.735" y3="-19.05" textsize="1.016" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="0" x2="0" y2="53.34" x3="-24.13" y3="26.67" textsize="1.016" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="0" x2="77.47" y2="0" x3="38.735" y3="-21.59" textsize="1.016" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="0" x2="3.81" y2="0" x3="1.905" y3="-2.54" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="0" y1="0" x2="59.69" y2="3.81" x3="29.845" y3="-13.97" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="59.69" y2="3.81" x3="29.845" y3="-16.51" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="0" y1="0" x2="3.81" y2="3.81" x3="-1.27" y3="1.905" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="3.81" y2="49.53" x3="-16.51" y3="24.765" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="64.77" y2="-1.27" x3="32.385" y3="-16.51" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
-<dimension x1="0" y1="0" x2="1.27" y2="16.51" x3="-6.35" y3="8.255" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="7.62" y2="43.18" x3="-13.97" y3="21.59" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="52.832" y2="22.7965" x3="-8.89" y3="11.39825" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="52.832" y2="22.7965" x3="26.416" y3="-8.89" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="3.81" y2="49.53" x3="-21.59" y3="24.765" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="64.77" y2="-1.27" x3="32.385" y3="-19.05" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="1.27" y2="16.51" x3="-8.89" y3="8.255" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="7.62" y2="43.18" x3="-19.05" y3="21.59" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="52.832" y2="22.7965" x3="-11.43" y3="11.39825" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="52.832" y2="22.7965" x3="26.416" y3="-11.43" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="77.47" y1="8.89" x2="77.47" y2="44.45" x3="85.09" y3="26.67" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
 <text x="11.176" y="43.307" size="1.27" layer="21" font="vector" ratio="15" rot="R270" align="center">3.7-5V</text>
 <text x="11.176" y="43.307" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center">3.7-5V</text>
@@ -264,12 +264,15 @@ Reader</text>
 <vertex x="59.69" y="15.24"/>
 </polygon>
 <text x="14.732" y="26.543" size="1.27" layer="22" font="vector" ratio="15" rot="MR90" align="center">Warning: Hot!</text>
-<dimension x1="0" y1="0" x2="53.34" y2="31.75" x3="26.67" y3="-11.43" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
+<dimension x1="0" y1="0" x2="53.34" y2="31.75" x3="26.67" y3="-13.97" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="0" y1="0" x2="11.43" y2="11.43" x3="5.715" y3="-6.35" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 <dimension x1="0" y1="0" x2="11.43" y2="11.43" x3="-3.81" y3="5.715" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
-<dimension x1="0" y1="0" x2="53.34" y2="31.75" x3="-11.43" y3="15.875" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="53.34" y2="31.75" x3="-13.97" y3="15.875" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
 <text x="30.48" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center">BZ1</text>
 <text x="27.94" y="47.244" size="1.27" layer="22" font="vector" ratio="15" rot="MR270" align="center">BZ2</text>
+<dimension x1="0" y1="0" x2="16.51" y2="15.24" x3="-6.35" y3="7.62" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="16.51" y2="36.83" x3="-16.51" y3="18.415" textsize="1.016" textratio="15" layer="47" dtype="vertical" unit="inch"/>
+<dimension x1="0" y1="0" x2="16.51" y2="15.24" x3="8.255" y3="-8.89" textsize="1.016" textratio="15" layer="47" dtype="horizontal" unit="inch"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -2410,7 +2413,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="SF_SKU" value="COM-00597" x="41.91" y="43.18" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="PROD_ID" value="SWCH-08179" x="41.91" y="43.18" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 </element>
-<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="-1.27" y="-29.21"/>
+<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="0" y="-34.29"/>
 <element name="C3" library="SparkFun-Capacitors" package="0603" value="DNP" x="62.23" y="14.859" rot="R90">
 <attribute name="PROD_ID" value="CAP-07879" x="62.23" y="14.859" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
