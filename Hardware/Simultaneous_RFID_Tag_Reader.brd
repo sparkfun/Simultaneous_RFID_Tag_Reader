@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -2471,6 +2471,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="C8" library="SparkFun-Capacitors" package="0603" value="47pF" x="30.48" y="60.96" rot="R90">
 <attribute name="PROD_ID" value="CAP-08913" x="30.48" y="60.96" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
+<element name="R2" library="SparkFun-Resistors" package="0603" value="1k" x="6.35" y="20.32">
+<attribute name="PROD_ID" value="RES-07856" x="6.35" y="20.32" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -2849,9 +2852,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <signal name="ENABLE">
 <contactref element="U2" pad="11"/>
 <contactref element="J5" pad="1"/>
-<wire x1="1.27" y1="21.59" x2="8.89" y2="21.59" width="0.254" layer="1"/>
+<wire x1="1.27" y1="21.59" x2="5.588" y2="21.59" width="0.254" layer="1"/>
 <via x="12.573" y="45.72" extent="1-16" drill="0.381"/>
 <via x="27.94" y="47.625" extent="1-16" drill="0.381"/>
+<wire x1="5.588" y1="21.59" x2="8.89" y2="21.59" width="0.254" layer="1"/>
 <wire x1="27.94" y1="47.625" x2="27.94" y2="45.98" width="0.254" layer="1"/>
 <wire x1="25.4" y1="45.085" x2="27.94" y2="47.625" width="0.254" layer="16"/>
 <wire x1="12.573" y1="45.72" x2="15.875" y2="45.72" width="0.254" layer="16"/>
@@ -2861,6 +2865,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="10.16" y1="22.86" x2="8.89" y2="21.59" width="0.254" layer="1"/>
 <wire x1="12.573" y1="45.72" x2="11.43" y2="45.72" width="0.254" layer="1"/>
 <wire x1="11.43" y1="45.72" x2="10.16" y2="44.45" width="0.254" layer="1"/>
+<contactref element="R2" pad="1"/>
+<wire x1="5.5" y1="20.32" x2="5.5" y2="21.502" width="0.254" layer="1"/>
+<wire x1="5.5" y1="21.502" x2="5.588" y2="21.59" width="0.254" layer="1"/>
 </signal>
 <signal name="GPIO1">
 <contactref element="U2" pad="10"/>
@@ -3093,7 +3100,11 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U4" pad="17"/>
 <wire x1="20.21" y1="37.17" x2="20.21" y2="38.972" width="0.762" layer="1"/>
 <wire x1="21.46" y1="37.17" x2="21.46" y2="38.738" width="0.762" layer="1"/>
-<wire x1="8.89" y1="6.35" x2="8.89" y2="29.21" width="0.762" layer="16"/>
+<wire x1="8.89" y1="6.35" x2="8.89" y2="20.32" width="0.762" layer="16"/>
+<contactref element="R2" pad="2"/>
+<wire x1="8.89" y1="20.32" x2="8.89" y2="29.21" width="0.762" layer="16"/>
+<wire x1="7.2" y1="20.32" x2="8.89" y2="20.32" width="0.254" layer="1"/>
+<via x="8.89" y="20.32" extent="1-16" drill="0.381"/>
 </signal>
 <signal name="ANT3">
 <contactref element="SJ2" pad="1"/>

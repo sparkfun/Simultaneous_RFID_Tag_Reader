@@ -21990,6 +21990,8 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R2" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
+<part name="SUPPLY3" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22035,7 +22037,7 @@ Serial</text>
 <text x="307.34" y="58.42" size="2.54" layer="97" align="center">Shield and Serial Select</text>
 <text x="83.82" y="218.44" size="1.778" layer="97">Default is PCB antenna.</text>
 <text x="292.1" y="142.24" size="1.778" layer="97">Not Populated</text>
-<text x="335.28" y="251.46" size="1.778" layer="97">Open JP1 if powering from
+<text x="337.82" y="259.08" size="1.778" layer="97">Open JP1 if powering from
 a source that you do not
 want feeding back to USB</text>
 <polygon width="0.2032" layer="96">
@@ -22061,6 +22063,8 @@ when VCCA &gt; VCCB. VCC must
 be greater than 3.3V.</text>
 <text x="215.9" y="198.12" size="1.778" layer="97">RF Noise Supressors</text>
 <wire x1="220.98" y1="132.08" x2="220.98" y2="177.8" width="0.2032" layer="97" style="longdash"/>
+<text x="444.5" y="259.08" size="2.032" layer="91">Added 4 x 47pF caps
+Added 1 x 1k resistor</text>
 </plain>
 <instances>
 <instance part="STANDOFF4" gate="G$1" x="426.72" y="38.1"/>
@@ -22172,6 +22176,8 @@ be greater than 3.3V.</text>
 <instance part="GND25" gate="1" x="236.22" y="205.74"/>
 <instance part="GND26" gate="1" x="226.06" y="205.74"/>
 <instance part="GND27" gate="1" x="215.9" y="205.74"/>
+<instance part="R2" gate="G$1" x="332.74" y="241.3" rot="R90"/>
+<instance part="SUPPLY3" gate="G$1" x="332.74" y="248.92"/>
 </instances>
 <busses>
 </busses>
@@ -22421,8 +22427,12 @@ be greater than 3.3V.</text>
 <net name="ENABLE" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="B3"/>
-<wire x1="320.04" y1="233.68" x2="322.58" y2="233.68" width="0.1524" layer="91"/>
-<label x="322.58" y="233.68" size="1.27" layer="95" xref="yes"/>
+<wire x1="320.04" y1="233.68" x2="332.74" y2="233.68" width="0.1524" layer="91"/>
+<label x="335.28" y="233.68" size="1.27" layer="95" xref="yes"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="332.74" y1="233.68" x2="335.28" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="236.22" x2="332.74" y2="233.68" width="0.1524" layer="91"/>
+<junction x="332.74" y="233.68"/>
 </segment>
 <segment>
 <wire x1="398.78" y1="226.06" x2="393.7" y2="226.06" width="0.1524" layer="91"/>
@@ -22646,6 +22656,11 @@ be greater than 3.3V.</text>
 <pinref part="SUPPLY9" gate="G$1" pin="VCC"/>
 <wire x1="269.24" y1="154.94" x2="266.7" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="154.94" x2="266.7" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
+<wire x1="332.74" y1="248.92" x2="332.74" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ANT3" class="0">
